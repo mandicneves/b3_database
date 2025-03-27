@@ -4,9 +4,11 @@ A B3 disponibiliza as séries de cotação histórica (essas cotações não est
 
 A primeira coisa que eu fiz foi fazer o download das séries históricas anuais, e organizei-os nessa estrutura:
 
+```bash
 raw_database/
 ├── COTAHIST_A1986.TXT
 ├── COTAHIST_A1987.TXT
 ├── ...
 ├── COTAHIST_A2024.TXT
 ├── COTAHIST_A2025.TXT
+```
