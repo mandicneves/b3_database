@@ -12,3 +12,5 @@ raw_database/
 ├── COTAHIST_A2024.TXT
 ├── COTAHIST_A2025.TXT
 ```
+
+Em seguida apliquei o algoritmo em `0_parquet_db.py` que faz a leitura de todos os arquivos na pasta `raw_database` e os salva num formato `parquet` na pasta `parquet_dabase/cotacoes_historicas`
