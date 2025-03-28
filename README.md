@@ -10,8 +10,8 @@ A primeira coisa que eu fiz foi fazer o download das séries históricas anuais,
 
 ```bash
 raw_database/
-├── COTAHIST_A1986.TXT
-├── COTAHIST_A1987.TXT
+├── COTAHIST_A2000.TXT
+├── COTAHIST_A2001.TXT
 ├── ...
 ├── COTAHIST_A2024.TXT
 ├── COTAHIST_A2025.TXT
@@ -52,3 +52,9 @@ https://github.com/mandicneves/getDataCVM
 A ideia é criar tabela para dimensão para Empresa, Tickers e Tempo e, uma tabela fato para as negociações.
 
 O algoritimo em `3_criando_tabelas.py` realiza esse processo e salva as tabelas na pasta `database_tables`.
+
+---
+
+## Ajustar cotação histórica (em desenvolvimento)
+
+A ideia aqui é ajustar o preço de fechamento por desdobramentos, agrupamentos, distribuição de lucros.
