@@ -32,3 +32,11 @@ A B3 disponibiliza a consulta de empresas informando o código ISIN através do 
 Contudo, através desse link, se informado o código ISIN, não é possível obter o CNPJ da companhia. Utilizando a ferramenta **DevTools** do navegador, na aba **Network** eu consegui buscar o **endpoint** da api de códigos **ISIN**. O algoritimo em `1_cod_isin.py` realiza a tarefa de codificar e decodificar os **endpoints** para cada código **ISIN**. Enfim, o resultado final foi guardado em `aux_database/cnpj_codisin.csv`.
 
 ---
+
+## Verificar nomes de empresas semelhantes
+
+Algumas empresas ficaram sem CNPJ, então minha tentativa aqui é comparar o nome de empresas dentro do próprio arquivo `cnpj_codisin` quanto em comparação com os demonstrativos contábeis de envio obrigatório à **CVM**. Aqui eu fiz uso de uma biblioteca que eu mesmo criei (`getDataCVM`) que pega esses demonstrativos direto da CVM: https://dados.cvm.gov.br/dataset/?q=cias+abertas.
+
+O algoritimo em `2_empresas_cnpj.py` dá conta desse processo. No final, ainda assim, algumas empresas ficaram sem CNPJ. Minha solução, por enquanto, foi salvar dois arquivos, um desconsiderando essas empresas - `aux_database/empresas_cnpj_sem_na.csv` - e outro contendo-as - `aux_database/empresas_cnpj_com_na.csv`. Num momento futuro minha intenção é completar essa tabela.
+
+---
