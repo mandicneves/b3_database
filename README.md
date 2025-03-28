@@ -39,6 +39,10 @@ Algumas empresas ficaram sem CNPJ, então minha tentativa aqui é comparar o nom
 
 O algoritimo em `2_empresas_cnpj.py` dá conta desse processo. No final, ainda assim, algumas empresas ficaram sem CNPJ. Minha solução, por enquanto, foi salvar dois arquivos, um desconsiderando essas empresas - `aux_database/empresas_cnpj_sem_na.csv` - e outro contendo-as - `aux_database/empresas_cnpj_com_na.csv`. Num momento futuro minha intenção é completar essa tabela.
 
-**OBS:** a biblioteca `getDataCVM` está disponível no Pypi.org: https://pypi.org/project/getDataCVM/#description. E também no meu Github: https://github.com/mandicneves/getDataCVM
+**OBS:** a biblioteca `getDataCVM` está disponível no Pypi.org e no meu Github:
+
+https://pypi.org/project/getDataCVM/#description.
+
+https://github.com/mandicneves/getDataCVM
 
 ---
