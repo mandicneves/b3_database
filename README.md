@@ -46,3 +46,9 @@ https://pypi.org/project/getDataCVM/#description.
 https://github.com/mandicneves/getDataCVM
 
 ---
+
+## Criar tabelas dimensão e fato
+
+A ideia é criar tabela para dimensão para Empresa, Tickers e Tempo e, uma tabela fato para as negociações.
+
+O algoritimo em `3_criando_tabelas.py` realiza esse processo e salva as tabelas na pasta `database_tables`.
